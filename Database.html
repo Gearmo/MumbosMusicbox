@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title> Find Music / Mumbo's Musicbox</title>
+        
+            <!-- HTML -->
+            <link rel="icon" href="images/favicon-4.png"/>
+            <meta charset="utf-8">
+            
+            <!-- BOOTSTRAP -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+            <!-- CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/Database.css">
+
+            <!-- JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="js/Database.js" type="text/javascript"></script>
+
+            <!-- BOOTSTRAP 3 -->
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    </head>
+
+    <body>
+    <img src="images/background2.png" id="background">
+        <!-- GLOBAL NAVBAR -->
+        <nav class="navbar-inverse">        
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav list-group-horizontal">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="Database.html">Find Music</a></li>
+                    <li><a href="Composition.html">Composition</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Submit.html">Submit</a></li>
+                    <li><a href="Discord.html">Discord
+                    </a></li>
+                </ul>
+
+                <!-- LOGIN -->
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul> -->
+
+            </div>
+        </nav>
+
+        <!-- BODY -->
+        <div class="mainbody">
+
+            <!-- BANNER -->
+            <div class="banner">
+            <img src="images/mmb_banner.png" alt="MMB Banner">
+
+                <div class="pageid">Database</div>
+            
+                <div class="container">
+
+                <table id="sortingtools"> <!-- DATABASE HEADING -->   <!-- COLLAPSE TABLE HERE -->
+                    <thead>            
+                        <tr class="oneentry">
+                            <th class="series" id="sorting" style="color: #000"><b>Series</b></th>
+                            <th class="game" id="sorting" style="color: #000"><b>Game</b></th>
+                            <th class="title" id="sorting" style="color: #000"><b>Title</b></th>
+                            <th class="artist" id="sorting" style="color: #000"><b>Artist</b></th>                               
+                            <th class="preview" id="nosorting" style="color: #000"><b>Preview</b></th>
+                            <th class="filebox1" id="nosorting" style="color: #000"><b>Downloads</b></th>
+                            <th class="looppoint" id="nosorting" style="color: #000"><b>Loop Point</b></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="oneentry"> <!-- Chris P Bacon -->
+                            <td class="series">Banjo-Kazooie</td>
+                            <td class="game">Banjo-Tooie</td>
+                            <td class="title">Chris P. Bacon</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Chris P Bacon.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Chris P Bacon.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Chris P Bacon.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Chris P Bacon.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                            </td>
+                            <td class="looppoint">4</td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Fun-N-Games -->
+                            <td class="series">Banjo-Kazooie</td>
+                            <td class="game">Banjo-Tooie</td>
+                            <td class="title">Fun-N-Games</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Fun-N-Games.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Fun-N-Games.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Fun-N-Games.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Fun-N-Games.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">5</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Mr. Patch -->
+                            <td class="series">Banjo-Kazooie</td>
+                            <td class="game">Banjo-Tooie</td>
+                            <td class="title">Mr. Patch</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Mr Patch.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Mr Patch.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Mr Patch.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Mr Patch.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>   
+
+                        <tr class="oneentry"> <!-- Twinleaf Town -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Twinleaf Town</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Twinleaf Town.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Twinleaf Town.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Twinleaf Town.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Twinleaf Town.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Lake Theme DPPt -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Lake Theme</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Lake Theme.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Lake Theme.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Lake Theme.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Lake Theme.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">2</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Sandgem Town -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Sandgem Town</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Sandgem Town.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Sandgem Town.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Sandgem Town.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Sandgem Town.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Jubilife City -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Jubilife City</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Jubilife City.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Jubilife City.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Jubilife City.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Jubilife City.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Oreburgh City -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Oreburgh City</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Oreburgh City.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Oreburgh City.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Oreburgh City.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Oreburgh City.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Oreburgh Mine -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Oreburgh Mine</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Oreburgh Mine.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Oreburgh Mine.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Oreburgh Mine.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Oreburgh Mine.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Eterna Forest -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Eterna Forest</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Eterna Forest.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Eterna Forest.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Eterna Forest.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Eterna Forest.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                            </td>
+                            <td class="looppoint">0</td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Mt. Coronet (Upper)-->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Mt. Coronet (Upper)</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Mt. Coronet (Upper).mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Mt. Coronet (Upper).mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Mt. Coronet (Upper).mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Mt. Coronet (Upper).mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">2</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Cynthia Battle -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Cynthia Battle</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Cynthia Battle.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Cynthia Battle.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Cynthia Battle.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Cynthia Battle.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a><div>                                
+                                <td class="looppoint">3</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- DPPt Route 201 -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Route 201</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/DPPt Route 201.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/DPPt Route 201.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/DPPt Route 201.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/DPPt Route 201.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">3</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- DPPt Route 203 -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Route 203</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/DPPt Route 203.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/DPPt Route 203.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/DPPt Route 203.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/DPPt Route 203.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- DPPt Route 205 -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Route 205</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/DPPt Route 205.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/DPPt Route 205.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/DPPt Route 205.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/DPPt Route 205.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- DPPt Route 209 -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">DPPt / BDSP</td>
+                            <td class="title">Route 209</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/DPPt Route 209.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/DPPt Route 209.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/DPPt Route 209.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/DPPt Route 209.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">2</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- BW Elite 4 Battle -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">BW / B2W2</td>
+                            <td class="title">Elite 4 Battle</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/BW Elite 4 Battle.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/BW Elite 4 Battle.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/BW Elite 4 Battle.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/BW Elite 4 Battle.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">13</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- SM64 Slider -->
+                            <td class="series">Mario</td>
+                            <td class="game">Super Mario 64</td>
+                            <td class="title">Slider</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/SM64 Slider.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/SM64 Slider.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/SM64 Slider.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/SM64 Slider.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">3</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Megalovania  -->
+                            <td class="series">Undertale</td>
+                            <td class="game">Undertale</td>
+                            <td class="title">Megalovania</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Megalovania.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Megalovania.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Megalovania.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Megalovania.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Snowbelle  -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">XY</td>
+                            <td class="title">Snowbelle City</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Snowbelle City.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Snowbelle City.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Snowbelle City.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Snowbelle City.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">29</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Midboss Mayhem  -->
+                            <td class="series">Mario + Rabbids</td>
+                            <td class="game">Mario + Rabbids: Kingdom Battle</td>
+                            <td class="title">Midboss Mayhem</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Midboss Mayhem.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Midboss Mayhem.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Midboss Mayhem.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Midboss Mayhem.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">2</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Earthbound - Snowman  -->
+                            <td class="series">Mother</td>
+                            <td class="game">Earthbound</td>
+                            <td class="title">Snowman</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Earthbound - Snowman.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Earthbound - Snowman.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Earthbound - Snowman.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Earthbound - Snowman.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Floral Life  -->
+                            <td class="series">Maple Story</td>
+                            <td class="game">Maple Story</td>
+                            <td class="title">Floral Life</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Floral Life.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Floral Life.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Floral Life.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Floral Life.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">20</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Anistar  -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">XY</td>
+                            <td class="title">Anistar City</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Anistar City.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Anistar City.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Anistar City.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Anistar City.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">3</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Diantha  -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">XY</td>
+                            <td class="title">Diantha's Theme</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Diantha's Theme.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Diantha's Theme.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Diantha's Theme.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Diantha's Theme.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">17</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Gen 1 Gym Battle  -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">RBY / FRLG </td>
+                            <td class="title">Gym Battle</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Gen 1 - Gym Battle.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Gen 1 - Gym Battle.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Gen 1 - Gym Battle.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Gen 1 - Gym Battle.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">11</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Brinstar  -->
+                            <td class="series">Metroid</td>
+                            <td class="game">Metroid</td>
+                            <td class="title">Brinstar</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Brinstar.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Brinstar.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Brinstar.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Brinstar.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Bramble Blast  -->
+                            <td class="series">Donkey Kong</td>
+                            <td class="game">Donkey Kong Country 2</td>
+                            <td class="title">Bramble Blast</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Bramble Blast.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Bramble Blast.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Bramble Blast.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Bramble Blast.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">3</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- Nuvema Town -->
+                            <td class="series">Pokémon</td>
+                            <td class="game">BW / B2W2</td>
+                            <td class="title">Nuvema Town</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Nuvema Town.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Nuvema Town.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Nuvema Town.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Nuvema Town.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">0</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- RitA  -->
+                            <td class="series">Zelda</td>
+                            <td class="game">Skyward Sword</td>
+                            <td class="title">Romance In The Air</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/Romance In The Air.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/Romance In The Air.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/Romance In The Air.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/Romance In The Air.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">34</td>
+                            </td>
+                        </tr>
+
+                        <tr class="oneentry"> <!-- SS Faron Woods  -->
+                            <td class="series">Zelda</td>
+                            <td class="game">Skyward Sword</td>
+                            <td class="title">Faron Woods</td>
+                            <td class="artist">Gearmo</td>
+                            <td class="preview">
+                                <audio controls>
+                                    <source src="database/SS Faron Woods.mp3" type="audio/mpeg">
+                                  Your browser does not support the audio element.
+                                  </audio>
+                            </td>
+                            <td class="filebox2">
+                                <div class="fileicon"><a href="database/SS Faron Woods.mp3" download><img src="images/mp3 icon.png" alt="mp3 icon" id="iconfit"></a></div> 
+                                <div class="fileicon"><a href="database/SS Faron Woods.mscz" download><img src="images/mscz icon.png" alt="mscz icon" id="iconfit"></a></div>
+                                <div class="fileicon"><a href="database/SS Faron Woods.mid" download><img src="images/midi icon.png" alt="midi icon" id="iconfit"></a></div>
+                                <td class="looppoint">5</td>
+                            </td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+                <script src="js/sorting.js"></script>       
+            </div>  
+
+            <div class="fauxdiv"> <!-- Spacing Compensation For Footer -->
+            </div>  
+
+        </div>
+
+        <!-- BACK TO TOP -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div>© 2023⠀|⠀<a href="https://github.com/Gearmo/MumbosMusicBox" target="#blank">GitHub</a></div>
+        </div>
+    </body>
+</html>

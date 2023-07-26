@@ -1,0 +1,29 @@
+COMPOSITION TAB:
+
+1) MUSESCORE / SOUNDFONT SETUP
+  A) Download of app
+  B) Palette Always Open (F9), Views, Concert Pitch
+ 
+2) TEMPLATE / SOUNDFONT
+  A) Open Template, 5 sections
+  B) Soundfont Import
+  C) "P", Creation
+
+3) BEFORE EXPORTING
+  A) 16 track limit, "I" to remove instruments
+  B) F10, assign banks 1-16, remove Reverb & Chorus
+  C) Export location
+
+4) MIDI EDITING
+  A) Correspondence sheet
+  B) Empty tracks, same note errors, cloning
+
+5) BANJOS BACKPACK
+  A) MIDI tool & looping
+  B) Pause Menu, explain Music Channel Data
+
+(https://hack64.net/wiki/doku.php?id=banjo_kazooie:music_channel_data)
+
+5) EMULATOR
+  A) No save states, saved files
+  B) Reserved banks for transitions, modding caution
